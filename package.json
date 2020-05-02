@@ -7,6 +7,10 @@
     "dev": "webpack --mode development --watch ./leadmanager/frontend/src/index.js --output ./leadmanager/frontend/static/frontend/main.js",
     "build": "webpack --mode production ./leadmanager/frontend/src/index.js --output ./leadmanager/frontend/static/frontend/main.js"
   },
+  "engine": {
+    "node": "12.1.0",
+    "npm": "6.14.4"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nickaskam/leadManagerReactDjango.git"
