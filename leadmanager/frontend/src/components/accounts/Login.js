@@ -15,11 +15,13 @@ export class Login extends Component {
     isAuthenticated: PropTypes.bool,
   };
 
+  // run when submit button is pressed
   onSubmit = (e) => {
     e.preventDefault();
     this.props.login(this.state.username, this.state.password);
   };
 
+  // run when any changes are made
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
   render() {
