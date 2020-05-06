@@ -22,7 +22,7 @@ export const getLeads = () => (dispatch, getState) => {
 //DELETE LEAD
 export const deleteLead = (id) => (dispatch, getState) => {
   axios
-    .delete(`/api/leads/${id}`, tokenConfig(getState))
+    .delete(`/api/leads/${id}/`, tokenConfig(getState))
     .then((res) => {
       dispatch(createMessage({ deleteLead: "Lead Deleted" }));
       dispatch({
